@@ -1,0 +1,1 @@
+{% extends 'vitrines/base.html' %}{% block content %}<h1>Novo produto afiliado</h1><p>Inclua apenas URLs válidas e o seu código de afiliado quando disponibilizado pelo parceiro.</p><form method="post" class="card">{% csrf_token %}{{ form.as_p }}<button class="btn">Salvar produto</button></form>{% endblock %}

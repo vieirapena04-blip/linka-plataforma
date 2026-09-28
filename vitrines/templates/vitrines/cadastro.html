@@ -1,0 +1,10 @@
+{% extends 'vitrines/base.html' %}
+{% block content %}
+<section style="max-width:520px;margin:25px auto" class="card">
+  <p style="color:#c81d3d;font-weight:bold;letter-spacing:.08em">COMEÇAR UMA VITRINE</p>
+  <h1>Crie a sua conta</h1>
+  <p>Você poderá cadastrar produtos e gerar uma vitrine pública para compartilhar.</p>
+  <form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn" type="submit">Criar conta e acessar painel</button></form>
+  <p>Já possui conta? <a href="{% url 'login' %}">Entrar</a>.</p>
+</section>
+{% endblock %}
